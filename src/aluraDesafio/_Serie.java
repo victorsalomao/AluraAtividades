@@ -31,3 +31,7 @@ public class _Serie extends Titulo{
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
 }
+
+    public static void main(String[] args) {
+
+    }
