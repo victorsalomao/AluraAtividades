@@ -1,6 +1,6 @@
 package aluraDesafio;
 
-public class Titulo {
+public abstract class Titulo {
     private String Nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
@@ -46,12 +46,8 @@ public class Titulo {
     //getters e setters
 
     //Métodos
-    public void exibeFichaTecnica(){
-        System.out.println("Nome do Filme: " + getNome());
-        System.out.println("Categoria: " + getCategoria());
-        System.out.println("Duração em Minutos: " + getDuracaoEmMinutos());
-        System.out.println("Ano de Lançamento: " + getAnoDeLancamento());
-    }
+    public abstract void exibeFichaTecnica();
+
     public void avalia(double nota){
         this.SomaDasAvaliacoes += nota;
         totalDeAvaliacao++;
