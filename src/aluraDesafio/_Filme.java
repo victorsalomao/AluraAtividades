@@ -8,4 +8,12 @@ public class _Filme extends Titulo {
     public void setDiretor(String diretor) {
         this.diretor = diretor;
     }
+
+    @Override
+    public void exibeFichaTecnica(){
+        System.out.println("Nome do filme: " + getNome());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Diretor: " + getDiretor());
+        System.out.println("Ano de Lançamento: " + getAnoDeLancamento());
+    }
 }

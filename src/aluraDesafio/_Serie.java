@@ -30,4 +30,13 @@ public class _Serie extends Titulo{
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
+
+    @Override
+    public void exibeFichaTecnica(){
+        System.out.println("Nome do Filme: " + getNome());
+        System.out.println("Categoria: " + getCategoria());
+        System.out.println("Temporadas " + getTemporadas());
+        System.out.println("Duração em minutos " + getDuracaoEmMinutos());
+        System.out.println("Ano de Lançamento: " + getAnoDeLancamento());
+    }
 }
